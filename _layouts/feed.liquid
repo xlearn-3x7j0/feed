@@ -16,7 +16,7 @@
             {% unless categories contains post.category %}
               {% assign categories = post.category | split: '   ' | concat: categories %}
             {% endunless %}
-        }{% if for.last == false %},{% endif %}{% endif %}
+        }{% if forloop.last == false %},{% endif %}{% endif %}
     {% endfor %}
   ],
   categories: {{ categories | jsonify }}
