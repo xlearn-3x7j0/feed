@@ -13,6 +13,12 @@
             "languages": [
                  {{ post.translations | jsonify }}
             ]
+            {% unless categories contains post.category %}
+              {% if categories != '' %}
+                {% assign categories = categories | append: ', ' %}
+              {% endif %}
+              {% assign categories = categories | append: post.category %}
+            {% endunless %}
         }{% unless for.last %},{% endunless %}{% endif %}
     {% endfor %}
   ],
