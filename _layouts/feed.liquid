@@ -10,9 +10,7 @@
             "image": "{{ post.image}}",
             "date": "{{ post.date }}",
             "category": "{{ post.category }}",
-            "languages": [
-                 {{ post.translations | jsonify }}
-            ]
+            "languages": {{ post.translations | jsonify }}
             {% unless categories contains post.category %}
               {% assign categories = post.category | split: '   ' | concat: categories %}
             {% endunless %}
