@@ -19,5 +19,7 @@
         }{% if forloop.last == false %},{% endif %}{% endif %}
     {% endfor %}
   ],
+  
   categories: {{ categories | jsonify }}
+
 }
