@@ -14,7 +14,7 @@
                  {{ post.translations | jsonify }}
             ]
             {% unless categories contains post.category %}
-              {% assign categories = categories | concat: post.category %}
+              {% assign categories = categories | append: post.category %}
             {% endunless %}
         }{% unless for.last == true %},{% endunless %}{% endif %}
     {% endfor %}
