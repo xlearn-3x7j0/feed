@@ -11,15 +11,9 @@
             "date": "{{ post.date }}",
             "category": "{{ post.category }}",
             "languages": [
-                 {{ post.translations | jsonify }}{% endfor %}
+                 {{ post.translations | jsonify }}
             ]
         }{% unless for.last %},{% endunless %}{% endif %}
-        {% unless categories contains post.category %}
-            {% if categories != '' %}
-                {% assign categories = categories | append: ', ' %}
-            {% endif %}
-            {% assign categories = categories | append: post.category %}
-        {% endunless %}
     {% endfor %}
   ],
   categories: {{ categories | split: ', ' | jsonify }}
