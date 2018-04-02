@@ -3,13 +3,13 @@
     articles: [{% assign count = 1 %}
     {% for post in site.posts limit 200 %}{% if post.permalink and post.translations %}{% assign count = count | plus:1 %}
         {
-            "permalink": "{{ post.permalink }}",
-            "url": "{{ post.original }}",
-            "domain": "{{ post.domain }}",
+            "permalink": "{{ post.permalink  | jsonify }}",
+            "url": "{{ post.original | jsonify }}",
+            "domain": "{{ post.domain | jsonify }}",
             "title": {{ post.title | jsonify }},
-            "image": "{{ post.image}}",
+            "image": "{{ post.image | jsonify }}",
             "date": "{{ post.date }}",
-            "category": "{{ post.category }}",
+            "category": "{{ post.category  | jsonify }}",
             "languages": [
                  {{ post.translations | jsonify }}
             ]
