@@ -1,7 +1,6 @@
 {
-    {% assign categories = '' | split: '' %}
-    "articles": [{% assign count = 1 %}
-    {% for post in site.posts limit 200 %}{% if post.permalink and post.translations %}{% assign count = count | plus:1 %}
+    {% assign categories = '' | split: '' %}{% assign count = 1 %}
+    "articles": [{% for post in site.posts limit 200 %}{% if post.permalink and post.translations %}{% assign count = count | plus:1 %}
         {
             "permalink": "{{ post.permalink }}",
             "url": "{{ post.original }}",
