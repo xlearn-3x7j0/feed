@@ -1,7 +1,6 @@
 {
-    {% assign categories = '' | split: '' %}
-    articles: [{% assign count = 1 %}
-    {% for post in site.posts limit 200 %}{% if post.permalink and post.translations %}{% assign count = count | plus:1 %}
+    {% assign categories = '' | split: '' %}{% assign count = 1 %}
+    "articles": [{% for post in site.posts limit 200 %}{% if post.permalink and post.translations %}{% assign count = count | plus:1 %}
         {
             "permalink": "{{ post.permalink  | jsonify }}",
             "url": "{{ post.original | jsonify }}",
@@ -10,14 +9,14 @@
             "image": "{{ post.image | jsonify }}",
             "date": "{{ post.date }}",
             "category": "{{ post.category  | jsonify }}",
-            "languages": [
-                 {{ post.translations | jsonify }}
-            ]
+            "languages": {{ post.translations | jsonify }}
             {% unless categories contains post.category %}
-              {% assign categories = categories | concat: post.category %}
+              {% assign categories = post.category | split: '   ' | concat: categories %}
             {% endunless %}
-        }{% unless for.last == true %},{% endunless %}{% endif %}
+        }{% if forloop.last == false %},{% endif %}{% endif %}
     {% endfor %}
-  ],
-  categories: {{ categories | jsonify }}
+    ],
+
+    "categories": {{ categories | jsonify }}
+
 }

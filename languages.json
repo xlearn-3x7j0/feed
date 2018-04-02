@@ -1,0 +1,66 @@
+[
+	{
+    		"code": "ar",
+		"name": "عَرَبِيّ"
+	},
+
+	{
+		"code": "ca",
+		"name": "català"
+	},
+	
+	{
+    		"code": "de",
+		"name": "Deutsch"
+	},
+
+	{
+    		"code": "en",
+		"name": "English"
+	},
+
+	{
+    		"code": "el",
+		"name": "ελληνική"
+	},
+	
+	{
+    		"code": "es",
+		"name": "español"
+	},
+
+	{
+   		"code": "fr",
+		"name": "français"
+	},
+
+	{
+    		"code": "hi",
+		"name": "हिंदी"
+	},
+
+	{
+		"code": "hy",
+		"name": "հայերեն"
+	},
+
+	{
+		"code": "it",
+		"name": "italiano"
+	},
+	
+	{
+		"code": "ja",
+		"name": "日本語"
+	},
+
+	{
+		"code": "ko",
+		"name": "한국어"
+	},
+	
+	{
+		"code": "ru",
+		"name": "русский"
+	}
+]
