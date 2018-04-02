@@ -1,0 +1,43 @@
+{
+
+	"ar": {
+		"name": "عَرَبِيّ"
+	},
+
+	"de": {
+		"name": "Deutsch"
+	},
+
+	"en": {
+		"name": "English"
+	},
+
+	"es": {
+		"name ": "Español "
+	},
+
+	"el": {
+		"name": "Ελληνική"
+	},
+
+	"fr": {
+		"name": "Français"
+	},
+
+	"hi": {
+		"name": "हिंदी"
+	},
+
+	"hy": {
+		"name": "Հայերեն"
+	},
+
+	"it": {
+		"name": "Italiano"
+	},
+
+	"ru": {
+		"name": "Русский"
+	}
+
+}
