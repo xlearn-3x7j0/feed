@@ -1,43 +1,53 @@
-{
+[
 
-	"ar": {
+	{
+    		"code": "ar",
 		"name": "عَرَبِيّ"
 	},
 
-	"de": {
+	{
+    		"code": "de",
 		"name": "Deutsch"
 	},
 
-	"en": {
+	{
+    		"code": "en",
 		"name": "English"
 	},
 
-	"es": {
+	{
+    		"code": "es",
 		"name ": "Español "
 	},
 
-	"el": {
+	{
+    		"code": "el",
 		"name": "Ελληνική"
 	},
 
-	"fr": {
+	{
+   		"code": "fr",
 		"name": "Français"
 	},
 
-	"hi": {
+	{
+    		"code": "hi",
 		"name": "हिंदी"
 	},
 
-	"hy": {
+	{
+		"code": "hy",
 		"name": "Հայերեն"
 	},
 
-	"it": {
+	{
+		"code": "it",
 		"name": "Italiano"
 	},
 
-	"ru": {
+	{
+		"code": "ru",
 		"name": "Русский"
 	}
 
-}
+]
